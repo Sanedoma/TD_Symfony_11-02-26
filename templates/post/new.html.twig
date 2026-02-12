@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} | Nouveau post{% endblock %}
+
+{% block body %}
+<div class="example-wrapper" style="margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif;">
+    <h1>Créer un nouveau Post</h1>
+
+    {{ form_start(form) }}
+        {{ form_widget(form) }}
+        <button class="btn btn-primary mt-3">{{ button_label|default('Sauvegarder') }}</button>
+    {{ form_end(form) }}
+
+    <a href="{{ path('app_post') }}" class="btn btn-secondary mt-3">Retour à la liste</a>
+</div>
+{% endblock %}

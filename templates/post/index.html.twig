@@ -1,0 +1,38 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} {{ parent() }} | Liste des posts{% endblock %}
+
+{% block body %}
+<div class="example-wrapper" style="margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif;">
+    <h1>Liste des Posts</h1>
+
+    <a href="{{ path('app_post_new') }}" class="btn btn-primary mb-3">Créer un nouveau post</a>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Titre</th>
+                <th scope="col">Slug</th>
+                <th scope="col">Catégorie</th>
+                <th scope="col">Date de création</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for post in posts %}
+            <tr>
+                <th scope="row">{{ post.id }}</th>
+                <td>{{ post.title }}</td>
+                <td>{{ post.slug }}</td>
+                <td>{{ post.category.name }}</td>
+                <td>{{ post.createdAt ? post.createdAt|date('d/m/Y H:i') : '' }}</td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">Aucun post disponible</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

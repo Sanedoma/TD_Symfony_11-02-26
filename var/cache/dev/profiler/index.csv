@@ -1,0 +1,14 @@
+6c0c8d,127.0.0.1,GET,http://localhost:8000/category,1770882218,337f18,500,request
+337f18,127.0.0.1,GET,http://localhost:8000/category,1770882218,,500,request
+2e543a,127.0.0.1,GET,http://localhost:8000/post,1770882255,a60743,500,request
+a60743,127.0.0.1,GET,http://localhost:8000/post,1770882255,,500,request
+326c03,127.0.0.1,GET,http://localhost:8000/post,1770882609,,200,request
+348420,127.0.0.1,GET,http://localhost:8000/,1770882618,,404,request
+1ac6b6,127.0.0.1,GET,http://localhost:8000/category,1770882623,,200,request
+706b52,127.0.0.1,GET,http://localhost:8000/post/new,1770882628,,200,request
+710224,127.0.0.1,GET,http://localhost:8000/category/new,1770882699,,200,request
+99192a,127.0.0.1,POST,http://localhost:8000/category/new,1770882710,,302,request
+58b14f,127.0.0.1,GET,http://localhost:8000/category,1770882710,,200,request
+37cdc4,127.0.0.1,GET,http://localhost:8000/post/new,1770882714,,200,request
+de52ef,127.0.0.1,POST,http://localhost:8000/post/new,1770882717,,302,request
+96ac36,127.0.0.1,GET,http://localhost:8000/post,1770882717,,200,request
